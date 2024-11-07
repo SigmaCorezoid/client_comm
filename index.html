@@ -26,5 +26,24 @@
 </head>
 <body>
     <div class="full-screen-image"></div>
+    <script>
+  window.ctrlSettings = {
+    webWidget: {
+      actorId: "6e466d84-d493-4611-8201-87fb7024260f"
+    }
+  };
+</script>
+<script>
+  (function () {
+    window.ctrl = window.ctrl || function () {
+      (window.ctrl.q = window.ctrl.q || []).push(arguments);
+    };
+    var script = document.createElement("script");
+    var parent = document.getElementsByTagName("script")[0].parentNode;
+    script.async = 1;
+    script.src = "https://widget.simulator.company/shim.js";
+    parent.appendChild(script);
+  })();
+</script>
 </body>
 </html>
